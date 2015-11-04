@@ -1,0 +1,23 @@
+{
+  "name": "Laravel 5.1 Starter",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Adrian Dmitroca <dmitroca.adrian@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "resources/assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "startbootstrap-sb-admin-2": "~1.0.7"
+  }
+}
