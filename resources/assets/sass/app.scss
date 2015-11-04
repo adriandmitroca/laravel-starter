@@ -1,2 +1,4 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-
+@import "helpers/variables";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "helpers/mixins";
+@import "helpers/base";
