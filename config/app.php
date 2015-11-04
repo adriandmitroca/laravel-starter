@@ -205,6 +205,7 @@ return [
          * Third Party Aliases
          */
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        'Former'   => Former\Facades\Former::class,
     ],
 
 ];

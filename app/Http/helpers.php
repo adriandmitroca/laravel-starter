@@ -14,6 +14,20 @@ if ( ! function_exists('is_active')) {
     }
 }
 
+if ( ! function_exists('is_active_name')) {
+    /**
+     * Determine if given route alias equals to current one.
+     *
+     * @param $name
+     *
+     * @return null|string
+     */
+    function is_active_name($name)
+    {
+        return Route::current()->getName() == $name ? 'active' : null;
+    }
+}
+
 if ( ! function_exists('hide_email')) {
     /**
      * Encrypts e-mail address and generates JavaScript encrypted string to avoid robots and malware.
