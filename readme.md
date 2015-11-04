@@ -1,27 +1,31 @@
-## Laravel PHP Framework
+# Laravel Starter
+This package helps to save few hours of boring work that is repetable almost in every single project following best possible practices and using modern tools.
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+## Differences from fresh Laravel installation
+- Ships with must-have development dependencies:
+ * [Laravel IDE Helper](https://github.com/barryvdh/laravel-ide-helper) - better PHPStorm autocompletion
+ * [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar) - development debug console
+ * [Former](https://github.com/formers/former) - make Boostrap forms without writing single HTML line using Facades
+- PHPStorm project files are removed from Git
+- Ready for FTP deployments using [git-ftp](https://github.com/git-ftp/git-ftp)
+- Bower integration within `resources/assets`directory
+- Models moved to `app/Models` directory
+- Created and autoloaded `app/Http/helpers.php` file that includes 3 additional functions for toggling navigation links and e-mail obfuscation
+- Ready to go [Laravel Elixir](http://laravel.com/docs/5.1/elixir) setup that includes assets from Bower, BrowserSync and asset versioning
+- SASS resources with already created project structure that attaches [Bootstrap](http://getbootstrap.com/) and his most common variables
+- Core views (auth, errors, flash messages) and their structure with Bootstrap styling
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+## Get this in a minute
+1. Clone this repo:
+`git clone https://github.com/adriandmitroca/laravel-starter.git`
+2. Install project dependencies:
+`composer install` &
+`bower install ` & `npm install`
+3. Create `.env` file with your configuration credentials.
+4. Generate your application key `php artisan key:generate`
+5. Set up your database schema just with example users `php artisan migrate:refresh --seed`
+6. Compile all assets: `gulp`
+7. Make your app: `gulp watch`
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
-
-## Official Documentation
-
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+## Contribution
+I am open minded to any idea or a direction this starter could go to. If you have any idea feel free to contact me or make pull request with your improvement.
