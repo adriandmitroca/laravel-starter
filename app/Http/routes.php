@@ -11,6 +11,14 @@
 |
 */
 
+Route::controller('auth', 'Auth\AuthController');
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::group([ 'prefix' => 'admin', 'namespace' => 'Admin' ], function () {
+    Route::get('/', function () {
+        return view('admin.welcome');
+    });
 });
