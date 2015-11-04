@@ -145,6 +145,13 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * Third Party Providers...
+         */
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
+        Former\FormerServiceProvider::class,
+
     ],
 
     /*
@@ -194,6 +201,10 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 
+        /*
+         * Third Party Aliases
+         */
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 
 ];
