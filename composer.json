@@ -9,7 +9,8 @@
         "laravel/framework": "5.1.*",
         "barryvdh/laravel-ide-helper": "^2.1",
         "barryvdh/laravel-debugbar": "^2.0",
-        "anahkiasen/former": "4.0.*@dev"
+        "anahkiasen/former": "4.0.*@dev",
+        "filp/whoops": "^1.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
