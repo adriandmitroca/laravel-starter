@@ -73,7 +73,7 @@
 
 <!-- JavaScripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="//cdn.ckeditor.com/4.5.4/standard/ckeditor.js"></script>
+<script src="//cdn.ckeditor.com/4.5.6/standard/ckeditor.js"></script>
 <script src="{{ asset(elixir('js/admin.js')) }}"></script>
 @yield('scripts')
 </body>
