@@ -1,7 +1,5 @@
-@extends('admin.layouts.base')
+@extends('admin.layouts.app')
 
 @section('content')
-    <div class="container">
-        <h1 class="text-center">Laravel Starter - Admin Panel</h1>
-    </div>
+    <h1 class="page-header">Dashboard</h1>
 @endsection
