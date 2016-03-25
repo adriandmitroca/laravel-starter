@@ -1,6 +1,6 @@
 <?php
 
-if ( ! function_exists('is_active')) {
+if (! function_exists('is_active')) {
     /**
      * Determine if given route action equals to current one.
      *
@@ -14,7 +14,7 @@ if ( ! function_exists('is_active')) {
     }
 }
 
-if ( ! function_exists('is_active_name')) {
+if (! function_exists('is_active_name')) {
     /**
      * Determine if given route alias equals to current one.
      *
@@ -28,7 +28,7 @@ if ( ! function_exists('is_active_name')) {
     }
 }
 
-if ( ! function_exists('hide_email')) {
+if (! function_exists('hide_email')) {
     /**
      * Encrypts e-mail address and generates JavaScript encrypted string to avoid robots and malware.
      *
