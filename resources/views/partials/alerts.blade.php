@@ -19,11 +19,15 @@
     </div>
 @endif
 
-@if(count($errors))
+@if(session()->has('error'))
     <div class="alert alert-danger alert-dismissable">
         <button type="button" class="close" data-dismiss="alert">×</button>
-        @foreach($errors->all() as $error)
-            {!! $error . '<br>' !!}
-        @endforeach
+        @if(is_array(session()->get('error')))
+            @foreach(session()->get('error') as $error)
+                {!! $error . '<br/>' !!}
+            @endforeach
+        @else
+            {!! session()->get('error')  !!}
+        @endif
     </div>
 @endif
