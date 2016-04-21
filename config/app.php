@@ -159,6 +159,7 @@ return [
         /*
          * Third Party Providers...
          */
+        GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
         Former\FormerServiceProvider::class,
