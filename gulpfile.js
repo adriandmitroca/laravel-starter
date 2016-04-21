@@ -27,8 +27,9 @@ elixir(function (mix) {
 
     mix.scripts([
         '../bower_components/bootstrap/dist/js/bootstrap.min.js',
-        'app.js'
-    ], 'public/js/app.js');
+    ], 'public/js/vendor.js');
+
+    mix.browserify('app.js');
 
     /*
      * Admin assets
@@ -48,5 +49,5 @@ elixir(function (mix) {
     /*
      * Assets versioning
      */
-    mix.version(['public/css/app.css', 'public/css/admin.css', 'public/js/app.js', 'public/js/admin.js']);
+    mix.version(['public/css/app.css', 'public/css/admin.css', 'public/js/vendor.js', 'public/js/app.js', 'public/js/admin.js']);
 });

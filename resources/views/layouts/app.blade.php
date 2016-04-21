@@ -65,6 +65,7 @@
 
     <!-- JavaScripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="{{ asset(elixir('js/vendor.js')) }}"></script>
     <script src="{{ asset(elixir('js/app.js')) }}"></script>
 </body>
 </html>
