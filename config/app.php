@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => env('APP_URL', 'http://localhost'),
 
     /*
     |--------------------------------------------------------------------------
@@ -211,8 +211,8 @@ return [
         /*
          * Third Party Aliases
          */
-        'Debugbar' => Barryvdh\Debugbar\Facade::class,
-        'Former'   => Former\Facades\Former::class,
+        'Debugbar'  => Barryvdh\Debugbar\Facade::class,
+        'Former'    => Former\Facades\Former::class,
     ],
 
 ];
