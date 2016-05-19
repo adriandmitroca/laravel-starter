@@ -1,6 +1,6 @@
 <?php
 
-if (! function_exists('is_active')) {
+if (!function_exists('is_active')) {
     /**
      * Determine if given route action equals to current one.
      *
@@ -14,7 +14,7 @@ if (! function_exists('is_active')) {
     }
 }
 
-if (! function_exists('is_active_name')) {
+if (!function_exists('is_active_name')) {
     /**
      * Determine if given route alias equals to current one.
      *
@@ -28,7 +28,21 @@ if (! function_exists('is_active_name')) {
     }
 }
 
-if (! function_exists('hide_email')) {
+if (!function_exists('integer_to_money')) {
+    /**
+     * Transform given integer representation to money format
+     *
+     * @param string|integer $integer
+     * @param string $dec_point
+     * @return string
+     */
+    function integer_to_money($integer, $dec_point = ',')
+    {
+        return number_format(($integer / 100), 2, $dec_point, '');
+    }
+}
+
+if (!function_exists('hide_email')) {
     /**
      * Encrypts e-mail address and generates JavaScript encrypted string to avoid robots and malware.
      *
@@ -42,9 +56,9 @@ if (! function_exists('hide_email')) {
     {
         $character_set = '+-.0123456789@ABCDEFGHIJKLMNOPQRSTUVWXYZ_abcdefghijklmnopqrstuvwxyz';
 
-        $key         = str_shuffle($character_set);
+        $key = str_shuffle($character_set);
         $cipher_text = '';
-        $id          = 'e' . rand(1, 999999999);
+        $id = 'e' . rand(1, 999999999);
 
         for ($i = 0; $i < strlen($email); $i += 1) {
             $cipher_text .= $key[strpos($character_set, $email[$i])];
@@ -56,7 +70,7 @@ if (! function_exists('hide_email')) {
 
         $script .= 'document.getElementById("' . $id . '").innerHTML="<a href=\\"mailto:"+d+"\\">"+d+"</a>"';
 
-        $script = "eval(\"" . str_replace([ "\\", '"' ], [ "\\\\", '\"' ], $script) . "\")";
+        $script = "eval(\"" . str_replace(["\\", '"'], ["\\\\", '\"'], $script) . "\")";
 
         $script = '<script type="text/javascript">/*<![CDATA[*/' . $script . '/*]]>*/</script>';
 
